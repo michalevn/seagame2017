@@ -12,7 +12,6 @@
 
 <title>Login Page</title>
 <c:set var="context" value="${pageContext.request.contextPath}" />
-<script src="${context}/themes/js/jquery.js"></script>
 <!-- Bootstrap Core CSS -->
 <link href="${context}/vendor/bootstrap/css/bootstrap.min.css"
 	rel="stylesheet">
@@ -47,10 +46,10 @@
 						<h3 class="panel-title">Please Sign In</h3>
 					</div>
 					<div class="panel-body">
-						<form role="form">
+						<form  action="${context}/login" method="post">
 							<fieldset>
 								<div class="form-group">
-									<input class="form-control" placeholder="Username" name="email"
+									<input class="form-control" placeholder="Username" name="username"
 										type="input" autofocus>
 								</div>
 								<div class="form-group">
@@ -63,7 +62,7 @@
 									</label>
 								</div>
 								<!-- Change this to a button or input when using this as a form -->
-								<a href="index.html" class="btn btn-lg btn-success btn-block">Login</a>
+								<button type="submit" class="btn btn-lg btn-success btn-block">Login</button>
 							</fieldset>
 						</form>
 					</div>

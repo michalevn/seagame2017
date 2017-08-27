@@ -79,7 +79,8 @@
 							<div class="panel-body">
 								<div class="row">
 									<div class="col-lg-6">
-										<form role="form" lpformnum="1">
+										<form role="form" lpformnum="1"
+											action="${context }/add-team.jsp" method="post">
 											<div class="form-group">
 												<label>Mã Đội Bóng</label> <input required="required"
 													class="form-control" name="teamCode">

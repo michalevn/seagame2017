@@ -1,4 +1,5 @@
-<%@ page language="java" contentType="text/html; charset=utf-8" pageEncoding="utf-8"%>
+<%@ page language="java" contentType="text/html; charset=utf-8"
+	pageEncoding="utf-8"%>
 <!DOCTYPE html>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
 <c:set var="context" value="${pageContext.request.contextPath}" />
@@ -15,16 +16,19 @@
 <title>Add New Team</title>
 
 <!-- Bootstrap Core CSS -->
-<link href="${context}/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+<link href="${context}/vendor/bootstrap/css/bootstrap.min.css"
+	rel="stylesheet">
 
 <!-- MetisMenu CSS -->
-<link href="${context}/vendor/metisMenu/metisMenu.min.css" rel="stylesheet">
+<link href="${context}/vendor/metisMenu/metisMenu.min.css"
+	rel="stylesheet">
 
 <!-- Custom CSS -->
 <link href="${context}/dist/css/sb-admin-2.css" rel="stylesheet">
 
 <!-- Custom Fonts -->
-<link href="${context}/vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+<link href="${context}/vendor/font-awesome/css/font-awesome.min.css"
+	rel="stylesheet" type="text/css">
 
 <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
 <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -40,10 +44,14 @@
 	<div id="wrapper">
 
 		<!-- Navigation -->
-		<nav class="navbar navbar-default navbar-static-top" role="navigation" style="margin-bottom: 0">
+		<nav class="navbar navbar-default navbar-static-top" role="navigation"
+			style="margin-bottom: 0">
 			<div class="navbar-header">
-				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-					<span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span>
+				<button type="button" class="navbar-toggle" data-toggle="collapse"
+					data-target=".navbar-collapse">
+					<span class="sr-only">Toggle navigation</span> <span
+						class="icon-bar"></span> <span class="icon-bar"></span> <span
+						class="icon-bar"></span>
 				</button>
 				<a class="navbar-brand" href="index.html">Sea Game 2017</a>
 			</div>
@@ -73,32 +81,41 @@
 									<div class="col-lg-6">
 										<form role="form" lpformnum="1">
 											<div class="form-group">
-												<label>Mã Đội Bóng</label> <input required="required" class="form-control">
-												<p class="help-block">Mã duy nhất, gồm 3 ký tự , không được trùng với các mã đã tồn tại.</p>
+												<label>Mã Đội Bóng</label> <input required="required"
+													class="form-control" name="teamCode">
+												<p class="help-block">Mã duy nhất, gồm 3 ký tự , không
+													được trùng với các mã đã tồn tại.</p>
 											</div>
 											<div class="form-group">
-												<label>Tên Đội Bóng</label> <input class="form-control" placeholder="Tên đội">
+												<label>Tên Đội Bóng</label> <input class="form-control"
+													placeholder="Tên đội" name="teamName">
 											</div>
 											<div class="form-group">
-												<label>Hình đại diện</label> <input type="file">
+												<label>Hình đại diện (URL)</label> <input type="text"
+													class="form-control" name="imageUrl">
 											</div>
 											<div class="form-group">
 												<label>Mô tả </label>
-												<textarea class="form-control" rows="3"></textarea>
+												<textarea class="form-control" rows="3"
+													name="teamDescription"></textarea>
 											</div>
-											  
+
 											<div class="form-group">
 												<label>Active</label>
 												<div class="radio">
-													<label> <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked="">Hoạt động
+													<label> <input type="radio" name="teamStatus"
+														id="optionsRadios1" value="active" checked="">Hoạt
+														động
 													</label>
 												</div>
 												<div class="radio">
-													<label> <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">Không hoạt động
+													<label> <input type="radio" name="teamStatus"
+														id="optionsRadios2" value="inactive">Không hoạt
+														động
 													</label>
 												</div>
 											</div>
-											<button type="submit" class="btn btn-default">Thêm </button>
+											<button type="submit" class="btn btn-default">Thêm</button>
 											<button type="reset" class="btn btn-default">Làm lại</button>
 										</form>
 									</div>

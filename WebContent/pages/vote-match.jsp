@@ -1,4 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=utf-8" pageEncoding="utf-8"%>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
+<c:set var="context" value="${pageContext.request.contextPath}" />
 <!DOCTYPE html>
 <html lang="en">
 
@@ -13,16 +15,16 @@
 <title>Add Match</title>
 
 <!-- Bootstrap Core CSS -->
-<link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+<link href="${context}/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
 <!-- MetisMenu CSS -->
-<link href="../vendor/metisMenu/metisMenu.min.css" rel="stylesheet">
+<link href="${context}/vendor/metisMenu/metisMenu.min.css" rel="stylesheet">
 
 <!-- Custom CSS -->
-<link href="../dist/css/sb-admin-2.css" rel="stylesheet">
+<link href="${context}/dist/css/sb-admin-2.css" rel="stylesheet">
 
 <!-- Custom Fonts -->
-<link href="../vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+<link href="${context}/vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
 
 <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
 <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -31,10 +33,10 @@
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
 
-<script type="text/javascript" src="../datetime/jquery-1.11.3.min.js"></script>
+<script type="text/javascript" src="${context}/datetime/jquery-1.11.3.min.js"></script>
 <!-- Bootstrap Date-Picker Plugin -->
-<script type="text/javascript" src="../datetime/bootstrap-datepicker.min.js"></script>
-<link rel="stylesheet" href="../datetime/bootstrap-datepicker3.css" />
+<script type="text/javascript" src="${context}/datetime/bootstrap-datepicker.min.js"></script>
+<link rel="stylesheet" href="${context}/datetime/bootstrap-datepicker3.css" />
 
 <style type="text/css">
 .form-group.required .control-label:after {
@@ -159,16 +161,16 @@
 	<!-- /#wrapper -->
 
 	<!-- jQuery -->
-	<!-- 	<script src="../vendor/jquery/jquery.min.js"></script> -->
+	<!-- 	<script src="${context}/vendor/jquery/jquery.min.js"></script> -->
 
 	<!-- Bootstrap Core JavaScript -->
-	<script src="../vendor/bootstrap/js/bootstrap.min.js"></script>
+	<script src="${context}/vendor/bootstrap/js/bootstrap.min.js"></script>
 
 	<!-- Metis Menu Plugin JavaScript -->
-	<script src="../vendor/metisMenu/metisMenu.min.js"></script>
+	<script src="${context}/vendor/metisMenu/metisMenu.min.js"></script>
 
 	<!-- Custom Theme JavaScript -->
-	<script src="../dist/js/sb-admin-2.js"></script>
+	<script src="${context}/dist/js/sb-admin-2.js"></script>
 
 </body>
 
